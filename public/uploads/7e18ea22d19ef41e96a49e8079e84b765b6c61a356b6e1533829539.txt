@@ -1,0 +1,19 @@
+# [Ionic Hero | Ionic 3 com Firebase] - Aula Final | Update, Delete & Toast
+
+
+
+ionic com firebase,curso de ionic 3 com firebase,ionic hero,ionic academy,como usar o ionic com firebase,conectando ionic com firebase,crie seu primeiro app ionic com firebase,firebase,ionic framework
+
+Chegamos a última aula da nossa série sobre Ionic 3 & Firebase. Nesta aula nós criaremos a parte de update & delete do nosso catálogo de cursos. Criaremos ainda um serviço para utilização do componente Toast.
+
+Em breve Ionic Hero, plataforma focada em conteúdos sobre Ionic e seu ecossistema.
+
+Acesse em https://ionichero.com; 
+
+Conheça ainda o blog do Ionic Hero em https://blog.ionichero.com 
+
+Siga-nos nas redes sociais: 
+
+Instagram: http://instagram.com/codeexpertslearning 
+Twitter: http://twitter.com/CELearning30 
+Facebook: http://fb.me/CodeExpertsLearning

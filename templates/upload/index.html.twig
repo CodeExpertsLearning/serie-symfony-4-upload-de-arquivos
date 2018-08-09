@@ -3,6 +3,7 @@
 {% block title %}Upload de Arquivos com Symfony 4{% endblock %}
 
 {% block body %}
+    {% include 'message.html.twig' %}
     <div class="container">
         <form action="{{ path('upload') }}" class="" method="post" enctype="multipart/form-data">
             <div class="form-group">

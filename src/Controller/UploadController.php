@@ -22,9 +22,20 @@ class UploadController extends Controller
 	 */
     public function upload(Request $request)
     {
-    	print '<pre>';
-    	var_dump($request->files->all());
+    	try {
+		    $files = $request->files->get('file');
 
-    	return new Response('Teste...');
+		    foreach ($files as $f) {
+			    $newName = md5($f->getClientOriginalName()) . uniqid() . time() . '.' . $f->guessExtension();
+
+			    $f->move($this->getParameter('upload_folder'), $newName);
+		    }
+
+		    $this->addFlash('success', 'Upload realizado com sucesso!');
+		    return $this->redirectToRoute('home_upload');
+	    } catch (\Exception $e) {
+		    $this->addFlash('error', 'Erro ao realizar upload: ' . $e->getMessage());
+		    return $this->redirectToRoute('home_upload');
+	    }
     }
 }
